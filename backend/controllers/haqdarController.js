@@ -20,11 +20,12 @@ export const haqdar = async (req, res) => {
                 maxOutputTokens: 800,
             }
         })
-
+        const parts = response.data.candidates[0].content.parts;
+        const fullText=parts.map(part=>part.text).join("");
         return res.status(200).json({
             success: true,
             message: "Successfully fetched response from gemini",
-            data: response.data.candidates[0].content.parts[0],
+            data:fullText,
         })
     } catch (error) {
         return res.status(500).json({
