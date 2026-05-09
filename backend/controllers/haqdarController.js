@@ -17,7 +17,7 @@ export const haqdar = async (req, res) => {
             }],
             generationConfig: {
                 temperature: 0.7,
-                maxOutputTokens: 800,
+                maxOutputTokens: 2000,
             }
         })
         const parts = response.data.candidates[0].content.parts;
