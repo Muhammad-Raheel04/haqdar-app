@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "haqdar app backend",
+  "homepage": "https://github.com/Muhammad-Raheel04/haqdar-app#readme",
+  "bugs": {
+    "url": "https://github.com/Muhammad-Raheel04/haqdar-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muhammad-Raheel04/haqdar-app.git"
+  },
+  "license": "ISC",
+  "author": "Muhammad Raheel",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "devDependencies": {}
+}
