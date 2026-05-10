@@ -62,7 +62,8 @@ A simple, mobile-friendly web application where women can ask legal questions in
 |---|---|
 | Frontend | HTML, CSS |
 | AI Model | Google Gemini 1.5 Flash API |
-| Hosting | GitHub Pages |
+| Frontend Deplpoyed At | Netlify  |
+| Backend Delpoyed AT | Railway |
 | Design | RTL Urdu typography, mobile-first layout |
 
 ---
