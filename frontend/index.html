@@ -44,6 +44,9 @@
       top: 0;
       z-index: 100;
       box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+      margin-bottom: 25px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
 
     .header-inner {
@@ -51,149 +54,29 @@
       margin: 0 auto;
       padding: 14px 20px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-icon {
-      width: 46px;
-      height: 46px;
-      background: var(--gold);
-      border-radius: 50%;
-      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 22px;
-      box-shadow: 0 2px 8px rgba(201, 168, 76, 0.4);
+      text-align: center;
+      width: 100%;
     }
+
+
+
 
     .logo-text h1 {
       font-size: 1.5rem;
       color: #fff;
       font-weight: 700;
       line-height: 1.1;
+      margin: 0;
     }
 
     .logo-text p {
       font-size: 0.72rem;
       color: rgba(255, 255, 255, 0.75);
       font-family: 'Noto Sans Arabic', sans-serif;
-    }
-
-    .header-badge {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.25);
-      border-radius: 20px;
-      padding: 5px 14px;
-      color: #fff;
-      font-size: 0.72rem;
-      font-family: 'Noto Sans Arabic', sans-serif;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      background: linear-gradient(160deg, var(--green-pale) 0%, #fff 60%);
-      padding: 40px 20px 30px;
-      text-align: center;
-      border-bottom: 3px solid var(--green-pale);
-    }
-
-    .hero h2 {
-      font-size: 1.9rem;
-      color: var(--green);
-      line-height: 1.4;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      color: var(--gray);
-      font-size: 0.95rem;
-      max-width: 500px;
-      margin: 0 auto 20px;
-      font-family: 'Noto Sans Arabic', sans-serif;
-      line-height: 1.8;
-    }
-
-    .hero-tags {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      background: var(--green);
-      color: #fff;
-      border-radius: 20px;
-      padding: 4px 14px;
-      font-size: 0.75rem;
-      font-family: 'Noto Sans Arabic', sans-serif;
-    }
-
-    .tag.pink {
-      background: var(--pink);
-    }
-
-    .tag.gold {
-      background: var(--gold);
-      color: var(--dark);
-    }
-
-    /* ── QUICK TOPICS ── */
-    .topics-section {
-      max-width: 900px;
-      margin: 30px auto 0;
-      padding: 0 20px;
-    }
-
-    .section-title {
-      font-size: 1.15rem;
-      color: var(--green);
-      margin-bottom: 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--green-pale);
-    }
-
-    .topics-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-      gap: 12px;
-      margin-bottom: 30px;
-    }
-
-    .topic-card {
-      background: #fff;
-      border: 2px solid var(--green-pale);
-      border-radius: 14px;
-      padding: 16px 12px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.2s;
-      box-shadow: var(--shadow);
-    }
-
-    .topic-card:hover {
-      border-color: var(--green);
-      transform: translateY(-3px);
-      box-shadow: 0 8px 28px rgba(26, 107, 60, 0.18);
-    }
-
-    .topic-card .icon {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
-
-    .topic-card .label {
-      font-size: 0.88rem;
-      color: var(--dark);
-      font-weight: 600;
-      line-height: 1.4;
+      margin: 0;
     }
 
     /* ── CHAT ── */
@@ -209,6 +92,7 @@
       box-shadow: var(--shadow);
       border: 2px solid var(--green-pale);
       overflow: hidden;
+      width:100%;
     }
 
     .chat-header {
@@ -217,6 +101,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      width:100%;
     }
 
     .chat-header .dot {
@@ -246,6 +131,7 @@
     }
 
     #messages {
+      background: linear-gradient(to bottom, #ffffff, #f7faf8);
       height: 380px;
       overflow-y: auto;
       padding: 20px;
@@ -425,33 +311,6 @@
       cursor: not-allowed;
     }
 
-    .disclaimer {
-      max-width: 900px;
-      margin: 0 auto 20px;
-      padding: 12px 20px;
-      background: #fff8e1;
-      border-right: 4px solid var(--gold);
-      border-radius: 0 10px 10px 0;
-      font-size: 0.78rem;
-      color: #7a6020;
-      font-family: 'Noto Sans Arabic', sans-serif;
-      line-height: 1.7;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-
-    footer {
-      background: var(--dark);
-      color: rgba(255, 255, 255, 0.6);
-      text-align: center;
-      padding: 16px;
-      font-size: 0.75rem;
-      font-family: 'Noto Sans Arabic', sans-serif;
-    }
-
-    footer span {
-      color: var(--green-light);
-    }
 
     @media (max-width: 600px) {
       .hero h2 {
@@ -466,6 +325,10 @@
         height: 300px;
       }
     }
+
+    .header-heading {
+      padding-bottom:10px;
+    }
   </style>
 </head>
 
@@ -473,72 +336,28 @@
 
   <header>
     <div class="header-inner">
-      <div class="logo">
-        <div class="logo-icon">⚖️</div>
-        <div class="logo-text">
-          <h1>حقدار</h1>
-          <p>Haqdar — Aapka Qanooni Madadgar</p>
-        </div>
+      <div class="logo-text">
+        <h1 class="header-heading">حقدار</h1>
+        <p>Haqdar Aapka Qanooni Madadgar</p>
       </div>
-      <div class="header-badge">🇵🇰 پاکستانی قانون</div>
     </div>
   </header>
 
-  <div class="hero">
-    <h2>خواتین کے قانونی حقوق<br />آسان زبان میں</h2>
-    <p>طلاق، وراثت، گھریلو تشدد، ملازمت — کوئی بھی قانونی سوال پوچھیں، اردو میں جواب پائیں۔</p>
-    <div class="hero-tags">
-      <span class="tag"> مفت</span>
-      <span class="tag pink"> رازداری</span>
-      <span class="tag gold"> موبائل فرینڈلی</span>
-    </div>
-  </div>
-
-  <div class="topics-section">
-    <div class="section-title"> جلدی سوال پوچھیں</div>
-    <div class="topics-grid">
-      <div class="topic-card" onclick="quickAsk('طلاق کے بعد عورت کے کیا حقوق ہیں؟')">
-        <div class="icon">💔</div>
-        <div class="label">طلاق کے حقوق</div>
-      </div>
-      <div class="topic-card" onclick="quickAsk('وراثت میں بیٹی کا حصہ کتنا ہے؟')">
-        <div class="icon">🏠</div>
-        <div class="label">وراثت</div>
-      </div>
-      <div class="topic-card" onclick="quickAsk('گھریلو تشدد کی صورت میں کیا کریں؟')">
-        <div class="icon">🆘</div>
-        <div class="label">گھریلو تشدد</div>
-      </div>
-      <div class="topic-card" onclick="quickAsk('خلع کیسے لیا جاتا ہے؟')">
-        <div class="icon">📜</div>
-        <div class="label">خلع</div>
-      </div>
-      <div class="topic-card" onclick="quickAsk('بچوں کی حضانت کس کو ملتی ہے؟')">
-        <div class="icon">👶</div>
-        <div class="label">بچوں کی حفاظت</div>
-      </div>
-      <div class="topic-card" onclick="quickAsk('کام کی جگہ ہراساں کرنے کی شکایت کیسے کریں؟')">
-        <div class="icon">💼</div>
-        <div class="label">ملازمت کے حقوق</div>
-      </div>
-    </div>
-  </div>
 
   <div class="chat-section">
-    <div class="section-title">💬 چیٹ کریں</div>
     <div class="chat-box">
       <div class="chat-header">
         <div class="dot"></div>
-        <span>حقدار AI — ابھی آن لائن ہے</span>
+        <span>حقدار ابھی آن لائن ہے</span>
       </div>
       <div id="messages">
         <div class="msg bot">
           <div class="msg-avatar">⚖️</div>
           <div class="msg-bubble">
-            السلام علیکم! میں حقدار ہوں — پاکستانی خواتین کے قانونی حقوق کے بارے میں آپ کی مدد کے لیے حاضر
+            السلام علیکم! میں حقدار ہوں پاکستانی خواتین کے قانونی حقوق کے بارے میں آپ کی مدد کے لیے حاضر
             ہوں۔<br /><br />
             آپ مجھ سے طلاق، وراثت، گھریلو تشدد، خلع، یا کسی بھی قانونی معاملے کے بارے میں پوچھ سکتی ہیں۔ سب کچھ
-            رازدارانہ رہے گا۔ 🔒
+            رازدارانہ رہے گا۔
           </div>
         </div>
       </div>
@@ -551,26 +370,11 @@
     </div>
   </div>
 
-  <div class="disclaimer">
-    ⚠️ <strong>نوٹ:</strong> حقدار صرف عام قانونی معلومات فراہم کرتا ہے۔ یہ قانونی مشورہ نہیں ہے۔ اہم معاملات کے لیے کسی
-    وکیل سے رابطہ کریں۔ ہنگامی صورت میں <strong>1099 (Women Helpline)</strong> یا <strong>15 (Police)</strong> پر کال
-    کریں۔
-  </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>بنایا گیا <span>Rah-e-Nisa Hackathon 2026</span> کے لیے — UET Taxila</p>
-    <p style="margin-top:4px">خواتین کے لیے، خواتین کے ساتھ 💚</p>
-  </footer>
 
   <script>
 
     let chatHistory = [];
-
-    function quickAsk(question) {
-      document.getElementById('userInput').value = question;
-      sendMessage();
-    }
 
     async function sendMessage() {
       const input = document.getElementById('userInput');
