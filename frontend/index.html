@@ -92,7 +92,7 @@
       box-shadow: var(--shadow);
       border: 2px solid var(--green-pale);
       overflow: hidden;
-      width:100%;
+      width: 100%;
     }
 
     .chat-header {
@@ -101,7 +101,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      width:100%;
+      width: 100%;
     }
 
     .chat-header .dot {
@@ -327,7 +327,22 @@
     }
 
     .header-heading {
-      padding-bottom:10px;
+      padding-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 25px;
+      padding: 18px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #f7faf8 0%, #eef7f1 100%);
+      border-top: 2px solid var(--green-pale);
+    }
+
+    .footer-text {
+      font-family: 'Noto Sans Arabic', sans-serif;
+      font-size: 0.8rem;
+      color: var(--gray);
+      letter-spacing: 0.2px;
     }
   </style>
 </head>
@@ -370,7 +385,9 @@
     </div>
   </div>
 
-
+  <footer>
+    <p class="footer-text">Haqdar is an AI assistant. It can make mistakes.</p>
+  </footer>
 
   <script>
 
